@@ -82,7 +82,7 @@ nav:
     - "Stage 1. 디테일 채워주기": practice1/stage1.md
     - "Stage 2. AI 자동화 워크플로우 설계": practice1/stage2.md
     - "Stage 3. 사람 확인 및 정답 비교": practice1/stage3.md
-    - "Stage 4. Skill화": practice1/stage4.md
+    - "Stage 4. Skill 맛보기": practice1/stage4.md
     - "부록. 에러 대처와 프롬프트 팁": practice1/appendix.md
     - "참고. 세부 메모": practice1/reference.md
   - "실습 2 | 수학 교재 디지털화 작업":
@@ -90,6 +90,7 @@ nav:
     - "Stage 0. AI에게 상황 설명하기": practice2/stage0.md
     - "Stage 1. PDF → 사진 변환 & 문제 페이지 골라내기": practice2/stage1.md
     - "Stage 2. 문제를 찾아서 한 장씩 잘라내기": practice2/stage2.md
+    - "Stage 2b. 도형/그래프 추출 (선택)": practice2/stage2b.md
     - "Stage 3. 사람 확인 및 엑셀 정리": practice2/stage3.md
     - "Stage 4. Skill화": practice2/stage4.md
     - "부록. 피드백 방법과 에러 대처": practice2/appendix.md

@@ -1,10 +1,13 @@
-# Stage 4. Skill화
+# Stage 4. Skill 맛보기
 
 <div class="stage-nav" markdown>
 **← 이전** [Stage 3. 사람 확인 및 정답 비교](stage3.md) · **다음 →** [부록. 에러 대처와 프롬프트 팁](appendix.md)
 </div>
 
 > 지금까지의 대화와 절차를 하나의 **재사용 가능한 작업 지침서**로 묶는 단계입니다.
+
+!!! info ""
+    **실습 2에서 본격적으로 Skill을 만들고 테스트할 예정**이므로, 여기서는 "아 이런 식이구나"를 느끼면 충분하다.
 
 | :material-timer-outline: 예상 소요 | :material-package-variant: 핵심 산출물 | :material-star-outline: 난이도 |
 |:--:|:--:|:--:|
@@ -71,6 +74,9 @@ AI에게 특정 태스크를 수행하는 방법을 가르치는 **구조화된 
 ---
 
 ## 4-2. 다시 써볼 수 있어야 진짜 완성
+
+!!! tip "시간이 남으면"
+    다른 대학 PDF에 Skill을 적용해본다. 시간이 없다면 실습 2에서 본격적으로 할 예정이니 넘어가도 된다.
 
 !!! example "다른 PDF 테스트 프롬프트"
     ```text
