@@ -1,0 +1,10 @@
+:root { --md-text-font: "Noto Sans KR", sans-serif; }
+.md-typeset h1 { font-weight: 700; margin-bottom: 0.8em; }
+.md-typeset h2 { border-bottom: 1px solid var(--md-default-fg-color--lightest); padding-bottom: 0.3em; margin-top: 1.8em; }
+.md-grid { max-width: 1440px; }
+.md-typeset table:not([class]) { font-size: 0.82rem; border: 1px solid var(--md-default-fg-color--lightest); }
+.md-typeset table:not([class]) th { background-color: var(--md-primary-fg-color); color: var(--md-primary-bg-color); font-weight: 600; }
+.md-typeset .admonition, .md-typeset details { font-size: 0.85rem; }
+.md-typeset pre > code { font-size: 0.8rem; }
+.stage-nav { background: var(--md-code-bg-color); padding: 0.8em 1.2em; border-radius: 6px; margin: 1.5em 0; font-size: 0.9rem; }
+.stage-nav a { font-weight: 600; }
