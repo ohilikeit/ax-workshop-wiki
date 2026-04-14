@@ -53,6 +53,13 @@ VSCode 왼쪽 탐색기(EXPLORER)에 `data/univ`(PDF 5개)와 `data/univ_parsed`
 
 ---
 
+!!! info "🚦 AI에게 시키기 전에 — 자동 허가 모드 설정"
+    에이전트가 매번 "이 파일 수정해도 될까요?"라고 물으면 실습 흐름이 끊깁니다. 실습 시작 전에 **자동 허가 모드**로 바꿔두세요.
+
+    👉 [**자동 허가 모드 설정 가이드 열기**](autoapprove.md) (Claude Code / Antigravity / Codex)
+
+---
+
 ## 딱 한 번만 시켜보기
 
 PDF 파일과 빈 Excel 템플릿을 준비한 뒤, 아래 프롬프트를 **그대로 복사해서** AI에게 보내세요.
