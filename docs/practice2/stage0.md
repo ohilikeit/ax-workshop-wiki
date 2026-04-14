@@ -12,9 +12,56 @@ title: "Stage 0. AI에게 상황 설명하기"
 
 
 !!! abstract "이번 단계의 목적"
+    - 실습 파일 준비 (압축 해제 → VSCode로 열기)
     - AI에게 내가 누구인지, 무엇을 만들고 싶은지 알려줍니다
     - 단계별로 진행할 것이고, 매번 눈으로 확인할 결과물을 달라고 요청합니다
     - AI가 내 의도를 이해했는지 확인합니다
+
+---
+
+## 🗂️ 먼저 실습 파일 준비하기
+
+AI에게 시키기 전에, 실습 자료가 들어있는 폴더를 **VSCode로 열어두어야** 합니다. Claude Code가 이 폴더 안의 파일(PDF, 결과 이미지)을 볼 수 있기 때문입니다.
+
+### 1️⃣ `practice_2.zip` 을 바탕화면에서 압축 해제
+
+전달받은 `practice_2.zip` 파일을 **바탕화면에 두고 더블클릭**해서 압축을 풉니다. zip 파일 옆에 `practice_2` 폴더가 새로 생기면 성공입니다.
+
+![바탕화면에 압축 해제된 practice_2 폴더가 생긴 모습](../images/practice2/setup_1.png)
+
+!!! tip ""
+    압축 해제된 폴더 안에는 `.agent`, `.claude`, `data`, `output` 폴더가 들어있습니다. `data`에 수학 교재 PDF가, `output`은 비어있는 결과 저장용 폴더입니다.
+
+### 2️⃣ VSCode를 열고 **Open Folder** 클릭
+
+VSCode를 실행하면 시작 화면이 뜹니다. 왼쪽의 파란색 **Open Folder** 버튼을 클릭하세요. (단축키 `Ctrl + K` → `Ctrl + O`)
+
+![VSCode 시작 화면에서 Open Folder 버튼 위치](../images/practice2/setup_2.png)
+
+### 3️⃣ 방금 압축 해제한 `practice_2` 폴더 선택
+
+폴더 선택창이 뜨면 **바탕화면 → practice_2** 를 선택하고, 오른쪽 아래 **Select folder** 를 누릅니다.
+
+![practice_2 폴더를 선택하는 화면](../images/practice2/setup_3.png)
+
+!!! warning "주의 — `practice_2` 폴더 자체를 선택하세요"
+    실수로 `data` 폴더나 바탕화면 자체를 선택하지 않도록 주의하세요. 반드시 `.agent`, `.claude`, `data`, `output`이 **안에 보이는** `practice_2` 폴더를 선택해야 합니다.
+
+### 4️⃣ 프로젝트가 열리면 Claude Code 패널 확인
+
+VSCode 왼쪽 탐색기(EXPLORER)에 `data`와 `output` 폴더가 보이고, 오른쪽에는 **Claude Code** 패널이 있으면 준비 완료입니다.
+
+![practice_2 프로젝트가 열리고 오른쪽에 Claude Code 패널이 표시된 모습](../images/practice2/setup_4.png)
+
+!!! tip "Claude Code 패널이 안 보이면"
+    단축키 `Ctrl + Alt + I` 를 누르거나, 우측 상단에서 **Claude Code** 탭을 열면 됩니다.
+
+---
+
+!!! info "🚦 AI에게 시키기 전에 — 자동 허가 모드 설정"
+    에이전트가 매번 "이 파일 수정해도 될까요?"라고 물으면 실습 흐름이 끊깁니다. 실습 시작 전에 **자동 허가 모드**로 바꿔두세요.
+
+    👉 [**자동 허가 모드 설정 가이드 열기**](autoapprove.md) (Claude Code / Antigravity / Codex)
 
 ---
 
