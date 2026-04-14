@@ -1,7 +1,7 @@
 # Stage 4. Skill 맛보기
 
 <div class="stage-nav" markdown>
-**← 이전** [Stage 3. 사람 확인 및 정답 비교](stage3.md) · **다음 →** [부록. 에러 대처와 프롬프트 팁](appendix.md)
+**← 이전** [Stage 2. 자동화 설계 + 검증](stage2.md) · **다음 →** [부록. 에러 대처와 프롬프트 팁](appendix.md)
 </div>
 
 > 지금까지의 대화와 절차를 하나의 **재사용 가능한 작업 지침서(Skill)**로 묶는 단계입니다. 이게 이번 실습의 진짜 목적지입니다.
@@ -109,5 +109,5 @@ AI에게 특정 태스크를 수행하는 방법을 가르치는 **구조화된 
 - [ ] 안 되는 부분을 수정해서 Skill을 개선했습니다
 
 <div class="stage-nav" markdown>
-**← 이전** [Stage 3. 사람 확인 및 정답 비교](stage3.md) · **다음 →** [부록. 에러 대처와 프롬프트 팁](appendix.md)
+**← 이전** [Stage 2. 자동화 설계 + 검증](stage2.md) · **다음 →** [부록. 에러 대처와 프롬프트 팁](appendix.md)
 </div>

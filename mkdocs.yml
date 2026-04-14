@@ -80,8 +80,7 @@ nav:
     - 개요: practice1/index.md
     - "Stage 0. 일단 시켜보기": practice1/stage0.md
     - "Stage 1. 디테일 채워주기": practice1/stage1.md
-    - "Stage 2. AI 자동화 워크플로우 설계": practice1/stage2.md
-    - "Stage 3. 사람 확인 및 정답 비교": practice1/stage3.md
+    - "Stage 2. 자동화 설계 + 검증": practice1/stage2.md
     - "Stage 4. Skill 맛보기": practice1/stage4.md
     - "부록. 에러 대처와 프롬프트 팁": practice1/appendix.md
     - "참고. 세부 메모": practice1/reference.md
