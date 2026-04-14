@@ -7,9 +7,49 @@
 > 요리로 치면 레시피를 다 쓰기 전에 먼저 한 번 만들어보는 단계입니다. 이 단계의 목표는 **정답을 맞추는 것이 아니라**, AI가 어디서 헷갈리는지 빠르게 파악하는 것입니다.
 
 !!! abstract "이번 단계 (약 5분)"
+    - 실습 파일 준비 (압축 해제 → VSCode로 열기)
     - 프롬프트 **1개**만 입력하면 됩니다
     - 결과를 보고 "어디가 이상한지" 메모합니다
     - 그 메모가 다음 Stage의 재료가 됩니다
+
+---
+
+## 🗂️ 먼저 실습 파일 준비하기
+
+AI에게 시키기 전에, 실습 자료가 들어있는 폴더를 **VSCode로 열어두어야** 합니다. Claude Code가 이 폴더 안의 파일(PDF, Excel)을 볼 수 있기 때문입니다.
+
+### 1️⃣ `practice_1.zip` 을 바탕화면에서 압축 해제
+
+전달받은 `practice_1.zip` 파일을 **바탕화면에 두고 더블클릭**해서 압축을 풉니다. 아래처럼 zip 파일 옆에 `practice_1` 폴더가 새로 생기면 성공입니다.
+
+![바탕화면에 압축 해제된 practice_1 폴더가 생긴 모습](../images/practice1/setup_1.png)
+
+!!! tip ""
+    압축 해제된 폴더 안에는 `.agent`, `.claude`, `data` 폴더가 들어있습니다. 이 중 `data/univ`가 모집요강 PDF, `data/univ_parsed`가 비어있는 Excel 템플릿입니다.
+
+### 2️⃣ VSCode를 열고 **Open Folder** 클릭
+
+VSCode를 실행하면 아래처럼 시작 화면이 뜹니다. 왼쪽의 파란색 **Open Folder** 버튼을 클릭하세요. (단축키로는 `Ctrl + K` → `Ctrl + O`)
+
+![VSCode 시작 화면에서 Open Folder 버튼 위치](../images/practice1/setup_2.png)
+
+### 3️⃣ 방금 압축 해제한 `practice_1` 폴더 선택
+
+폴더 선택창이 뜨면 **바탕화면 → practice_1** 을 선택하고, 오른쪽 아래 **Select folder** 를 누릅니다.
+
+![practice_1 폴더를 선택하는 화면](../images/practice1/setup_3.png)
+
+!!! warning "주의 — `practice_1` 폴더 자체를 선택하세요"
+    실수로 `data` 폴더나 바탕화면 자체를 선택하지 않도록 주의하세요. 반드시 `.agent`, `.claude`, `data`가 **안에 보이는** `practice_1` 폴더를 선택해야 합니다.
+
+### 4️⃣ 프로젝트가 열리면 Claude Code 패널 확인
+
+VSCode 왼쪽 탐색기(EXPLORER)에 `data/univ`(PDF 5개)와 `data/univ_parsed`(Excel 5개)가 보이고, 오른쪽에는 **Claude Code** 패널이 있으면 준비 완료입니다. 여기서 이제 프롬프트를 입력하면 됩니다.
+
+![practice_1 프로젝트가 열리고 오른쪽에 Claude Code 패널이 표시된 모습](../images/practice1/setup_4.png)
+
+!!! tip "Claude Code 패널이 안 보이면"
+    단축키 `Ctrl + Alt + I` 를 누르거나, 우측 상단에서 **Claude Code** 탭을 열면 됩니다.
 
 ---
 
