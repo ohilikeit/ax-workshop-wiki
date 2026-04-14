@@ -62,6 +62,8 @@ title: "Stage 4. Skill화"
     단, 코드 설명은 최소화하고, **"어떤 명령을 치면 뭐가 나온다"** 위주로 써줘.
     ```
 
+![WORKFLOW.md 작성 예시](../images/practice2/stage4_1.png)
+
 ---
 
 ## 4-2. Skill로 변환하기
@@ -124,6 +126,8 @@ title: "Stage 4. Skill화"
 
         Skill 파일은 이 도구의 표준 위치와 형식에 맞춰서 저장해줘. 잘 모르겠으면 이 도구의 Skill 만드는 내장 기능을 사용해줘.
         ```
+
+![Skill 생성 결과 예시](../images/practice2/stage4_2.png)
 
 ---
 

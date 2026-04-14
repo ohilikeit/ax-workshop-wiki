@@ -87,6 +87,10 @@
     학부는 자연이지만 농경제사회학부는 인문이야.
     ```
 
+![PART 분류 화면 1](../images/practice1/stage1_1.png)
+
+![PART 분류 화면 2](../images/practice1/stage1_2.png)
+
 ---
 
 ## 1-3. 결과 확인하고 다시 피드백하기
@@ -112,6 +116,12 @@
 ??? warning "잘 안 될 때"
     - 표 추출이 계속 부정확하면 먼저 `pdfplumber`, `PyMuPDF` 같은 PDF 라이브러리를 바꿔볼 수 있습니다
     - 그래도 텍스트가 거의 안 뽑히면 이미지형 PDF일 수 있으므로, 다음 Stage 설계에 OCR이나 Vision API 경로를 넣으면 됩니다
+
+## 결과 예시
+
+![Stage 1 결과 예시 1](../images/practice1/stage1_3.png)
+
+![Stage 1 결과 예시 2](../images/practice1/stage1_4.png)
 
 ---
 

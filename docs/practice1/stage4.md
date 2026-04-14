@@ -86,6 +86,8 @@ AI에게 특정 태스크를 수행하는 방법을 가르치는 **구조화된 
 ??? note "스킬이 안떠요.."
     간혹 방금 만든 스킬이 인식이 안되는 경우가 있는데 IDE를 새로고침 해주세요. `Ctrl + Shift + P`를 누른 뒤 **Developer: Reload Window** 를 선택하면 됩니다.
 
+    ![Developer Reload Window](../images/practice1/stage4_1.png)
+
 !!! tip "판단 팁"
     - 지금 PDF 하나에서만 잘 되면 아직 Skill이 아닙니다
     - 다른 대학 PDF에서 어디가 깨지는지 봐야 진짜 범용성이 드러납니다
@@ -93,6 +95,10 @@ AI에게 특정 태스크를 수행하는 방법을 가르치는 **구조화된 
 
 ??? question "왜 Skill화가 중요한가요?"
     자동화는 한 번 잘 되는 것보다, 다음에도 더 빨리 다시 할 수 있게 만드는 것이 중요합니다. Skill은 사람의 경험과 AI 협업 방식을 함께 저장하는 가장 실용적인 포장 방식입니다.
+
+## 결과 예시
+
+![Stage 4 Skill 결과](../images/practice1/stage4_2.png)
 
 ---
 

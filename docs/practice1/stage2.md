@@ -91,6 +91,12 @@
     뭐가 달라졌는지 비교해서 보여줘.
     ```
 
+## 결과 예시
+
+![Stage 2 결과 예시 1](../images/practice1/stage2_1.png)
+
+![Stage 2 결과 예시 2](../images/practice1/stage2_2.png)
+
 ---
 
 ## 체크포인트
