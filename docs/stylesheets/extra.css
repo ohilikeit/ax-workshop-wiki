@@ -1,7 +1,15 @@
 :root { --md-text-font: "Noto Sans KR", sans-serif; }
 .md-typeset h1 { font-weight: 700; margin-bottom: 0.8em; }
 .md-typeset h2 { border-bottom: 1px solid var(--md-default-fg-color--lightest); padding-bottom: 0.3em; margin-top: 1.8em; }
-.md-grid { max-width: 1440px; }
+/* 본문 폭 넓히기 (기본 1220 → 1860) */
+.md-grid { max-width: 1860px; }
+.md-main__inner { margin-top: 1rem; }
+/* 좌/우 사이드바 자체는 유지하되, 본문 영역 비율을 늘림 */
+@media screen and (min-width: 76.25em) {
+  .md-sidebar { width: 13rem; }
+  .md-content { max-width: none; }
+  .md-content__inner { margin: 0 2rem; }
+}
 .md-typeset table:not([class]) { font-size: 0.82rem; border: 1px solid var(--md-default-fg-color--lightest); }
 .md-typeset table:not([class]) th { background-color: var(--md-primary-fg-color); color: var(--md-primary-bg-color); font-weight: 600; }
 .md-typeset .admonition, .md-typeset details { font-size: 0.85rem; }
