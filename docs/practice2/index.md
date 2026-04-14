@@ -116,14 +116,33 @@ practice_2/
 
 ---
 
-## 실습 흐름
+## 지금 뭘 하는 건가요? (한눈에 보기)
+
+!!! abstract "실습의 큰 그림"
+    **"수학 문제집 PDF를 문제별 이미지 + 엑셀 메타데이터로 전산화하는 작업"** 을 AI와 함께 자동화하고, 그 자동화 과정을 **한 번 더 쓸 수 있는 Skill로 포장**하는 것이 이 실습의 전부입니다.
 
 ```mermaid
-flowchart TD
-    A["Stage 0<br>AI에게 상황 설명하기"] --> B["Stage 1<br>PDF를 사진으로 만들고<br>문제 페이지 골라내기"]
-    B --> C["Stage 2<br>문제를 찾아서<br>한 장씩 잘라내기"]
-    C --> D["Stage 3<br>사람 확인 및<br>엑셀 정리"]
-    D --> E["Stage 4<br>Skill화"]
+flowchart LR
+    subgraph INPUT["📥 전산화할 원본"]
+        PDF["수학 문제집 PDF<br/>(블랙라벨)"]
+    end
+
+    subgraph WORK["🤖 이번 실습: 단계별로 쪼개기"]
+        direction TB
+        S0["Stage 0<br/>AI에게 상황 설명<br/><i>AGENTS.md 로 규칙 고정</i>"]
+        S1["Stage 1<br/>페이지 → 사진<br/><i>문제 페이지만 골라낸다</i>"]
+        S2["Stage 2<br/>문제 단위로 자르기<br/><i>글자 크기로 번호 찾고 크롭</i>"]
+        S3["Stage 3<br/>사람 확인 + 엑셀<br/><i>문제 텍스트·STEP·태그 정리</i>"]
+        S0 --> S1 --> S2 --> S3
+    end
+
+    subgraph OUT["📦 최종 산출물 (Stage 4)"]
+        IMG["문제별 PNG + 도형 이미지"]
+        XLSX["정리된 Excel"]
+        SK["<b>Skill 2개</b><br/>/문제추출 · /문제파싱<br/><br/>→ 다른 교재에도<br/>한 마디로 재사용"]
+    end
+
+    INPUT --> WORK --> OUT
 ```
 
 ---

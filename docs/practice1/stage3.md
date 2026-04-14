@@ -7,9 +7,6 @@
 > AI 검증이 끝났다고 바로 믿지 않습니다. 이 단계에서는 **사람 눈으로 확인**하고, 이어서 **정답 Excel과 비교**해 정량적으로 진단합니다.
 > **하지만 이번 실습에서는 가볍게 이 페이지만 읽어보고 넘어갑니다.**
 
-| :material-timer-outline: 예상 소요 | :material-account-outline: 핵심 산출물 | :material-star-outline: 난이도 |
-|:--:|:--:|:--:|
-| 5분 | 사람 피드백 + 정답률 분석 | 보통 |
 
 ```mermaid
 flowchart TD
