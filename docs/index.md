@@ -76,6 +76,40 @@ flowchart LR
     - 한 번에 완벽한 답을 만드는 것이 아니라, **시도 → 오류 발견 → 수정 → 재검증**을 반복하는 훈련입니다
     - 마지막에는 재사용 가능한 **Skill**로 만들어 둡니다
 
+### 💡 사용량 절약을 위한 모델 선택 (권장)
+
+각 IDE의 최상위 모델은 구독 요금제의 사용량 한도를 빠르게 소진합니다. 실습 시간 동안 안정적으로 쓰려면 **사용하는 IDE에 맞게 아래처럼 한 단계 가벼운 모델**로 시작하세요.
+
+=== "Claude Code"
+    **Opus → Sonnet 으로 전환**
+
+    Opus 4.7은 강력하지만 사용량이 금방 소진됩니다. 기본 설정이 Opus라면 실습 시작 전에 **Sonnet 4.6**으로 바꿔두는 것을 권장합니다.
+
+    1. 프롬프트 창에 `/model` 을 입력합니다.
+
+        ![/model 입력 화면](images/home/model_claude_1.png)
+
+    2. 뜨는 모델 목록에서 **Sonnet**을 선택합니다 (목록 옆에 체크 표시가 이동합니다).
+
+        ![Sonnet 모델 선택](images/home/model_claude_2.png)
+
+=== "Antigravity"
+    **Gemini 3.1 Pro (Low) → Gemini 3 Flash → Claude Sonnet 4.6 순서로 전환**
+
+    기본으로 `Gemini 3.1 Pro (Low)`를 사용하다가, 사용량이 소진되면 `Gemini 3 Flash`, 그마저 소진되면 `Claude Sonnet 4.6 (Thinking)`으로 내려가며 실습을 이어가면 됩니다. 프롬프트 창 아래 모델 드롭다운을 클릭해서 바꾸면 됩니다.
+
+    ![Antigravity 모델 선택 드롭다운](images/home/model_anti.png)
+
+=== "Codex"
+    **기본은 GPT-5.4 — 단 `GPT-5.3-Codex-Spark`가 보이면 그걸 선택**
+
+    ChatGPT Plus의 Codex 기본 사용량이 넉넉해서 `GPT-5.4`를 그대로 써도 큰 무리는 없습니다.
+
+    !!! tip "Spark 모드가 활성화되어 있다면 꼭 선택하세요"
+        `GPT-5.3-Codex-Spark`는 **Cerebras** 추론 칩 위에서 돌아가는 변형으로, 일반 모델 대비 **속도가 10배 이상 빠릅니다**. 목록에 보이면 기본값 대신 이걸 고르세요.
+
+    ![Codex 모델 선택 드롭다운](images/home/model_codex.png)
+
 ---
 
 ## 바로가기
