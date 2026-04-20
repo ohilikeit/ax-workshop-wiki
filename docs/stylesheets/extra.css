@@ -19,3 +19,17 @@
 .md-typeset pre > code { font-size: 0.8rem; }
 .stage-nav { background: var(--md-code-bg-color); padding: 0.8em 1.2em; border-radius: 6px; margin: 1.5em 0; font-size: 0.9rem; }
 .stage-nav a { font-weight: 600; }
+
+/* 프롬프트 박스(quote/cite admonition) 안의 코드 블록은 자동 줄바꿈 — 가로 스크롤 없이 한눈에 */
+.md-typeset .admonition.quote pre,
+.md-typeset .admonition.quote pre code,
+.md-typeset details.quote pre,
+.md-typeset details.quote pre code,
+.md-typeset .admonition.cite pre,
+.md-typeset .admonition.cite pre code,
+.md-typeset details.cite pre,
+.md-typeset details.cite pre code {
+  white-space: pre-wrap;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}

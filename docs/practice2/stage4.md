@@ -43,7 +43,7 @@ title: "Stage 4. Skill화"
 
 ## 4-1. 작업 과정 문서화
 
-!!! quote "AI에게 이렇게 말해보세요"
+!!! quote "AI에게 이렇게 말해보세요 — 작업 과정 문서화"
     ```text
     지금까지 우리가 한 단계 1~6의 과정을 **재사용 가능한 작업 지침서로 정리해줘.**
 
@@ -65,7 +65,7 @@ title: "Stage 4. Skill화"
 
 ## 4-2. Skill로 변환하기
 
-!!! quote "Skill 생성 프롬프트"
+!!! quote "AI에게 이렇게 말해보세요 — Skill 생성"
 
     === "Claude Code"
 

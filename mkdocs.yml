@@ -81,7 +81,7 @@ nav:
     - "Stage 0. 일단 시켜보기": practice1/stage0.md
     - "Stage 1. 디테일 채워주기": practice1/stage1.md
     - "Stage 2. 자동화 설계 + 검증": practice1/stage2.md
-    - "Stage 4. Skill 맛보기": practice1/stage4.md
+    - "마무리. Skill 맛보기": practice1/stage4.md
     - "부록. 자동 허가 모드 설정": practice1/autoapprove.md
     - "부록. 에러 대처와 프롬프트 팁": practice1/appendix.md
     - "참고. 세부 메모": practice1/reference.md
