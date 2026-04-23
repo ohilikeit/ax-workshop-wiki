@@ -1,5 +1,5 @@
 # Auto-deploy via GitHub Actions
-site_name: "전사 AX 프로젝트 — 2주차 실습 가이드"
+site_name: "비개발자 바이브코딩 교육 — 2주차 실습 가이드"
 site_description: "비개발자를 위한 AI 코딩 에이전트 실습 교육 위키"
 site_author: "AI 팀"
 
@@ -97,6 +97,7 @@ nav:
     - "부록. 피드백 방법과 에러 대처": practice2/appendix.md
   - "실습 3 | 이미지 공고 → 캐치 폼 변환 웹앱":
     - 개요: practice3/index.md
-    - "1. 파싱을 위한 양식 만들기": practice3/stage1.md
-    - "2. 이미지 공고 처리 모듈": practice3/stage2.md
-    - "3. 프론트 + 백엔드 확인": practice3/stage3.md
+    - "1. 결과를 담을 빈 양식 만들기": practice3/stage1.md
+    - "2. 이미지 공고에서 정보 뽑아 양식 채우기": practice3/stage2.md
+    - "3. 웹 화면 붙이고 직접 써보기": practice3/stage3.md
+    - "부록. 자동 허가 모드 설정": practice3/autoapprove.md
