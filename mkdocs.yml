@@ -95,3 +95,8 @@ nav:
     - "Stage 4. Skill화": practice2/stage4.md
     - "부록. 자동 허가 모드 설정": practice2/autoapprove.md
     - "부록. 피드백 방법과 에러 대처": practice2/appendix.md
+  - "실습 3 | 이미지 공고 → 캐치 폼 변환 웹앱":
+    - 개요: practice3/index.md
+    - "1. 파싱을 위한 양식 만들기": practice3/stage1.md
+    - "2. 이미지 공고 처리 모듈": practice3/stage2.md
+    - "3. 프론트 + 백엔드 확인": practice3/stage3.md

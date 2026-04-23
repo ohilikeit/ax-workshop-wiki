@@ -1,0 +1,59 @@
+<!--
+  캐치 사이트(catch.co.kr) 공고 등록 폼이 데이터를 받아 자동 렌더링한
+  실제 공고 페이지의 HTML 예시입니다.
+
+  실습 3의 1번 페이지에서 catch_preview.html.j2 (Jinja2 템플릿)를 만들 때
+  이 HTML의 시각적 톤(헤더 스타일, 모집부문 카드, dl/dt/dd 패턴, 색상,
+  구분선, 인라인 CSS)을 참고하기 위한 few-shot 자료입니다.
+
+  ✅ 참고 포인트
+  - 외곽 컨테이너 max-width: 940px
+  - 헤더는 큰 제목(42px) + 접수기간 한 줄
+  - 각 섹션(모집부문/근무조건/전형단계/지원방법/복리후생/유의사항) 머리글 24px bold + 보라색 구분선
+  - 모집부문 안의 항목은 dl/dt/dd 패턴 (90px 라벨 + 본문)
+  - 전형단계는 화살표 배경 이미지를 가진 span 시퀀스
+  - 복리후생은 카테고리(보상·수당/휴가·휴직/사내시설/생활·건강) 별로 ✓ 항목 나열
+  - Noto Sans KR 폰트, 본문 16px / 라벨 #1a1a1a / 구분선 #393479 30%
+
+  학습자는 이 파일을 통째로 LLM에 첨부해서
+  "이 톤을 따라 catch_preview.html.j2 를 만들어주세요" 라고 요청하면 됩니다.
+-->
+<div style="max-width: 940px; margin: 0px auto; padding-bottom: 20px; font-family: &quot;Noto Sans KR&quot;; text-align: left;"><header><div id="htmlHeaderImg" style="padding: 113px 50px 60px; background: none 0% 0% / 900px 188px;"><h2 style="margin: 0px; font-size: 42px; font-weight: bold; line-height: 140%; letter-spacing: -0.42px; color: rgb(26, 26, 26); text-align: center;">
+                        ai개발자 뽑아용
+                    </h2> <p style="margin: 14px 0px 0px; font-size: 20px; line-height: 34px; letter-spacing: -0.2px; color: rgb(26, 26, 26); text-align: center;">
+                        접수기간 : 2026.04.23 09시 - 2026.06.22 24시
+                    </p></div></header> <div style="padding: 0px 50px 50px;"><p style="margin: 0px 0px 30px; font-size: 24px; font-weight: bold; line-height: 34px; letter-spacing: -1.2px; color: rgb(26, 26, 26);">
+                    모집부문 및 상세내용
+                    <span style="display: block; margin-top: 5px; width: 100%; height: 1px; background: rgb(57, 52, 121); opacity: 0.3;"></span></p> <div style="font-size: 16px; line-height: 26px; letter-spacing: -1px; color: rgb(26, 26, 26); word-break: break-all;"><p style="margin: 30px 0px 12px; font-size: 18px; font-weight: bold; line-height: 28px; letter-spacing: -1px; color: rgb(26, 26, 26);">
+                            ai개발
+                        </p> <dl style="position: relative; margin: 8px 0px; display: flex; flex-wrap: nowrap;"><dt style="min-width: 90px;">
+        담당업무<span style="position: absolute; margin-top: 10px; left: 80px; width: 2px; height: 8px; background: url(&quot;https://imgorg.catch.co.kr/job/catchapply/tpl_b.png&quot;) 0px 0px no-repeat;"></span></dt> <!---->  ai 모델 서빙<br></dl> <!----> <dl style="position: relative; margin: 8px 0px; display: flex; flex-wrap: nowrap;"><dt style="min-width: 90px;">
+        경력여부<span style="position: absolute; margin-top: 10px; left: 80px; width: 2px; height: 8px; background: url(&quot;https://imgorg.catch.co.kr/job/catchapply/tpl_b.png&quot;) 0px 0px no-repeat;"></span></dt> <dd style="margin: 0px;">
+        신입
+    </dd> </dl> <!----> <!----> <dl style="position: relative; margin: 8px 0px; display: flex; flex-wrap: nowrap;"><dt style="min-width: 90px;">
+        근무지역<span style="position: absolute; margin-top: 10px; left: 80px; width: 2px; height: 8px; background: url(&quot;https://imgorg.catch.co.kr/job/catchapply/tpl_b.png&quot;) 0px 0px no-repeat;"></span></dt> <!----> <dd style="margin: 0px;">
+                                    서울 &gt; 종로구<!----> <br>(재택근무 가능)</dd></dl> <!----> <dl style="position: relative; margin: 8px 0px; display: flex; flex-wrap: nowrap;"><dt style="min-width: 90px;">
+        우대조건<span style="position: absolute; margin-top: 10px; left: 80px; width: 2px; height: 8px; background: url(&quot;https://imgorg.catch.co.kr/job/catchapply/tpl_b.png&quot;) 0px 0px no-repeat;"></span></dt> <dd style="margin: 0px;">
+        유관업무 경력자, 통계학 전공
+    </dd> </dl></div></div> <div style="padding: 0px 50px 50px;"><p style="margin: 0px 0px 30px; font-size: 24px; font-weight: bold; line-height: 34px; letter-spacing: -1.2px; color: rgb(26, 26, 26);">
+                    근무조건
+                    <span style="display: block; margin-top: 5px; width: 100%; height: 1px; background: rgb(57, 52, 121); opacity: 0.3;"></span></p> <div style="font-size: 16px; line-height: 26px; letter-spacing: -1px; color: rgb(26, 26, 26); word-break: break-all;"><dl style="position: relative; margin: 8px 0px; display: flex; flex-wrap: nowrap;"><dt style="min-width: 90px;">학력조건
+        <span style="position: absolute; margin-top: 10px; left: 80px; width: 2px; height: 8px; background: url(&quot;https://imgorg.catch.co.kr/job/catchapply/tpl_b.png&quot;) 0px 0px no-repeat;"></span></dt> <dd style="margin: 0px;">대학교졸업(4년) 이상 </dd></dl> <dl style="position: relative; margin: 8px 0px; display: flex; flex-wrap: nowrap;"><dt style="min-width: 90px;">고용형태
+        <span style="position: absolute; margin-top: 10px; left: 80px; width: 2px; height: 8px; background: url(&quot;https://imgorg.catch.co.kr/job/catchapply/tpl_b.png&quot;) 0px 0px no-repeat;"></span></dt> <dd style="margin: 0px;">정규직 </dd></dl> <dl style="position: relative; margin: 8px 0px; display: flex; flex-wrap: nowrap;"><dt style="min-width: 90px;">급여
+        <span style="position: absolute; margin-top: 10px; left: 80px; width: 2px; height: 8px; background: url(&quot;https://imgorg.catch.co.kr/job/catchapply/tpl_b.png&quot;) 0px 0px no-repeat;"></span></dt> <dd style="margin: 0px;">회사내규에 따름 </dd></dl> <!----></div></div> <div style="padding: 0px 50px 50px;"><p style="margin: 0px 0px 30px; font-size: 24px; font-weight: bold; line-height: 34px; letter-spacing: -1.2px; color: rgb(26, 26, 26);">
+                    전형단계
+                    <span style="display: block; margin-top: 5px; width: 100%; height: 1px; background: rgb(57, 52, 121); opacity: 0.3;"></span></p> <div style="font-size: 16px; line-height: 26px; letter-spacing: -1px; color: rgb(26, 26, 26); word-break: break-all;"><p style="margin: 4px 0px 0px;"><span style="padding-right: 22px; margin-right: 10px; background: url(&quot;https://imgorg.catch.co.kr/job/catchapply/tpl_b_arr.png&quot;) right 60% no-repeat;">서류전형 (서류)</span><span style="padding-right: 22px; margin-right: 10px; background: url(&quot;https://imgorg.catch.co.kr/job/catchapply/tpl_b_arr.png&quot;) right 60% no-repeat;">1차면접 (면접)</span><span style="padding-right: 22px; margin-right: 10px; background: url(&quot;https://imgorg.catch.co.kr/job/catchapply/tpl_b_arr.png&quot;) right 60% no-repeat;">2차면접 (인적성)</span><span style="padding-right: 22px; margin-right: 10px;">최종합격</span></p></div></div> <div style="padding: 0px 50px 50px;"><p style="margin: 0px 0px 30px; font-size: 24px; font-weight: bold; line-height: 34px; letter-spacing: -1.2px; color: rgb(26, 26, 26);">
+                    지원방법
+                    <span style="display: block; margin-top: 5px; width: 100%; height: 1px; background: rgb(57, 52, 121); opacity: 0.3;"></span></p> <div style="font-size: 16px; line-height: 26px; letter-spacing: -1px; color: rgb(26, 26, 26); word-break: break-all;"><dl style="position: relative; margin: 8px 0px; display: flex; flex-wrap: nowrap;"><dt style="min-width: 90px;">접수기간
+        <span style="position: absolute; margin-top: 10px; left: 80px; width: 2px; height: 8px; background: url(&quot;https://imgorg.catch.co.kr/job/catchapply/tpl_b.png&quot;) 0px 0px no-repeat;"></span></dt> <dd style="margin: 0px;"><!---->
+                        2026.04.23 09시 ~ <strong style="vertical-align: baseline;">2026.06.22 24시</strong></dd></dl> <dl style="position: relative; margin: 8px 0px; display: flex; flex-wrap: nowrap;"><dt style="min-width: 90px;">접수방법
+        <span style="position: absolute; margin-top: 10px; left: 80px; width: 2px; height: 8px; background: url(&quot;https://imgorg.catch.co.kr/job/catchapply/tpl_b.png&quot;) 0px 0px no-repeat;"></span></dt> <dd style="margin: 0px;"><!----> <p style="margin: 0px 0px 2px;">
+                            캐치 접수
+                            <!----> <!----></p></dd></dl> <dl style="position: relative; margin: 8px 0px; display: flex; flex-wrap: nowrap;"><dt style="min-width: 90px;">이력서 형식
+        <span style="position: absolute; margin-top: 10px; left: 80px; width: 2px; height: 8px; background: url(&quot;https://imgorg.catch.co.kr/job/catchapply/tpl_b.png&quot;) 0px 0px no-repeat;"></span></dt> <dd style="margin: 0px;">캐치 이력서
+                            (<a href="/Member/VideoCoverLetter" target="_blank">1분 영상자소서</a> 첨부 필수)</dd></dl> <!----> <!----> <!----></div></div> <!----> <div style="padding: 0px 50px 50px;"><p style="margin: 0px 0px 30px; font-size: 24px; font-weight: bold; line-height: 34px; letter-spacing: -1.2px; color: rgb(26, 26, 26);">
+                    복리후생
+                    <span style="display: block; margin-top: 5px; width: 100%; height: 1px; background: rgb(57, 52, 121); opacity: 0.3;"></span></p> <div style="font-size: 16px; line-height: 26px; letter-spacing: -1px; color: rgb(26, 26, 26); word-break: break-all;"><p style="margin: 20px 0px 2px;">보상·수당</p> <p style="margin: 0px; font-size: 12px; line-height: 18px; letter-spacing: -0.5px; color: rgb(26, 26, 26);"> ✓ 휴일(특근)수당  ✓ 자격증수당  ✓ 보육수당  ✓ 우수사원포상  ✓ 인센티브제  ✓ 우리사주제도  ✓ 공무원연금  ✓ 장기근속자포상  ✓ 퇴직금 </p></div><div style="font-size: 16px; line-height: 26px; letter-spacing: -1px; color: rgb(26, 26, 26); word-break: break-all;"><p style="margin: 20px 0px 2px;">휴가·휴직</p> <p style="margin: 0px; font-size: 12px; line-height: 18px; letter-spacing: -0.5px; color: rgb(26, 26, 26);"> ✓ 연차  ✓ 경조휴가제  ✓ Refresh휴가  ✓ 휴가비지원  ✓ 육아휴직 </p></div><div style="font-size: 16px; line-height: 26px; letter-spacing: -1px; color: rgb(26, 26, 26); word-break: break-all;"><p style="margin: 20px 0px 2px;">사내시설</p> <p style="margin: 0px; font-size: 12px; line-height: 18px; letter-spacing: -0.5px; color: rgb(26, 26, 26);"> ✓ 수유실  ✓ 수면실 </p></div><div style="font-size: 16px; line-height: 26px; letter-spacing: -1px; color: rgb(26, 26, 26); word-break: break-all;"><p style="margin: 20px 0px 2px;">생활·건강</p> <p style="margin: 0px; font-size: 12px; line-height: 18px; letter-spacing: -0.5px; color: rgb(26, 26, 26);"> ✓ 각종 경조사 지원  ✓ 진료비지원(가족)  ✓ 해외여행 지원 </p></div></div> <!----> <div style="padding: 0px 50px 50px;"><p style="margin: 0px 0px 30px; font-size: 24px; font-weight: bold; line-height: 34px; letter-spacing: -1.2px; color: rgb(26, 26, 26);">
+                    문의 및 기타 유의사항
+                    <span style="display: block; margin-top: 5px; width: 100%; height: 1px; background: rgb(57, 52, 121); opacity: 0.3;"></span></p> <div style="font-size: 16px; line-height: 26px; letter-spacing: -1px; color: rgb(26, 26, 26); word-break: break-all;"><!----> <!----> <dl style="position: relative; margin: 8px 0px; display: flex; flex-wrap: nowrap;"><dt style="min-width: 90px;">
+                            유의사항<span style="position: absolute; margin-top: 10px; left: 80px; width: 2px; height: 8px; background: url(&quot;https://imgorg.catch.co.kr/job/catchapply/tpl_b.png&quot;) 0px 0px no-repeat;"></span></dt> <dd style="margin: 0px;">입사지원 서류에 허위사실이 발견될 경우, 채용이 취소될 수 있습니다.</dd></dl></div></div></div>
