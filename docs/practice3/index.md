@@ -26,10 +26,23 @@
 
 | 파일 | 크기 | 특징 |
 |---|---|---|
-| `data/hanwha_2026.jpg` | 1000 × 4038 | **메인 샘플**. 긴 이미지, 사업부문 3개 |
+| `data/hanwha_2026.jpg` | 1000 × 4038 | **메인 샘플**. 긴 이미지, 직군 3 × 직무 11 = 모집부문 11 |
 | `data/hanmi_2026.jpg` | 900 × 8667 | 매우 긴 이미지, 여러 조각으로 분할 |
 | `data/dongaoshuca_2026.png` | 973 × 3531 | 중간 길이 |
 | `data/codeit_2026.png` | 785 × 1425 | 짧은 이미지, 단일 포지션 |
+
+메인 샘플 한화 공고는 세로로 너무 길어서 한 장에 담기 어려워, **상·하 반으로 잘라 좌우로 나란히** 보여줍니다.
+
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; align-items:start;" markdown>
+<figure style="margin:0;" markdown>
+![한화 공고 상반부](../images/practice3/input_hanwha_top.png){ style="width:100%; display:block;" }
+<figcaption style="text-align:center; font-size:0.85em; color:#888; margin-top:4px;">한화 공고 — 상반부</figcaption>
+</figure>
+<figure style="margin:0;" markdown>
+![한화 공고 하반부](../images/practice3/input_hanwha_bottom.png){ style="width:100%; display:block;" }
+<figcaption style="text-align:center; font-size:0.85em; color:#888; margin-top:4px;">한화 공고 — 하반부</figcaption>
+</figure>
+</div>
 
 ---
 
@@ -44,14 +57,39 @@
 
 > **외부 공고 이미지 받음 → 사이드바에 추가 → 우측 결과 검수 → Excel 다운로드 → 캐치 폼에 옮김**
 
+**중간 결과물 예시** — 이미지 자르기·파싱까지 완료된 상태
+
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; align-items:start;" markdown>
+<figure style="margin:0;" markdown>
+![이미지 자른 결과](../images/practice3/2_1이미지자른결과.png){ style="width:100%; display:block;" }
+<figcaption style="text-align:center; font-size:0.85em; color:#888; margin-top:4px;">이미지 자른 결과 (2번 페이지 자르기 단계)</figcaption>
+</figure>
+<figure style="margin:0;" markdown>
+![엑셀로 바꾼 결과](../images/practice3/2_2엑셀로바꾼결과.png){ style="width:100%; display:block;" }
+<figcaption style="text-align:center; font-size:0.85em; color:#888; margin-top:4px;">엑셀로 바꾼 결과 (2번 페이지 파싱·병합 단계)</figcaption>
+</figure>
+</div>
+
+**최종 웹앱 동작 모습** — 3번 페이지까지 완료된 상태
+
+<figure style="margin:0 0 16px 0;" markdown>
+![변환 결과 화면](../images/practice3/3_2결과.png){ style="width:100%; display:block;" }
+<figcaption style="text-align:center; font-size:0.85em; color:#888; margin-top:4px;">변환 결과 화면</figcaption>
+</figure>
+
+<figure style="margin:0;" markdown>
+![HTML 탭 미리보기](../images/practice3/3_3결과.png){ style="width:100%; display:block;" }
+<figcaption style="text-align:center; font-size:0.85em; color:#888; margin-top:4px;">HTML 탭 미리보기</figcaption>
+</figure>
+
 ---
 
 ## 기술 스택
 
 | 계층 | 도구 |
 |---|---|
-| LLM | Gemini 3 Flash Preview (`google-genai` SDK, 모델 ID `gemini-3-flash-preview`) |
-| 이미지 처리 | Pillow + numpy (OpenCV 사용 금지) |
+| LLM | Gemini 3.1 Flash Lite Preview (`google-genai` SDK, 모델 ID `gemini-3.1-flash-lite-preview`) |
+| 이미지 처리 | Pillow + numpy |
 | 백엔드 | FastAPI + Python 3.11+ + `uv` |
 | 프론트 | Next.js 15 App Router + TypeScript + Tailwind |
 | 출력 | `openpyxl` (Excel), `Jinja2` (HTML 미리보기) |
@@ -63,7 +101,7 @@
 !!! info "준비물"
     - AI 코딩 에이전트 (Claude Code, Codex, Antigravity 중 택1) 설치
     - Node.js 20+, Python 3.11+, `uv` 또는 `pip`, `pnpm` 또는 `npm`
-    - 공용 Gemini API Key (강사가 팀즈에 비공개로 전달)
+    - 공용 Gemini API Key
     - `practice_3.zip` 압축 해제
 
 ```
@@ -77,6 +115,42 @@ practice_3/
     ├── hanmi_2026.jpg             ← 매우 긴 이미지 샘플 (2번에서 추가 시도)
     └── sample_catch_html.html     ← 캐치 사이트 자동 생성 HTML 예시 (few-shot)
 ```
+
+### 🗂️ 실습 파일 준비하기
+
+AI 코딩 에이전트가 이 폴더 안의 자료(공고 이미지·샘플 HTML)를 볼 수 있도록 **`practice_3` 폴더를 VSCode로 열어둬야** 합니다.
+
+#### 1️⃣ `practice_3.zip` 을 바탕화면에서 압축 해제
+
+전달받은 `practice_3.zip` 을 **바탕화면에 두고 더블클릭**해서 풀어줍니다. zip 파일 옆에 `practice_3` 폴더가 새로 생기면 성공입니다.
+
+![바탕화면에 압축 해제된 practice_3 폴더](../images/practice3/0_1.png)
+
+#### 2️⃣ VSCode를 열고 **Open Folder** 클릭
+
+VSCode 시작 화면에서 **Open Folder** 버튼을 누릅니다 (단축키 `Ctrl + K` → `Ctrl + O`).
+
+![VSCode 시작 화면 Open Folder 버튼](../images/practice3/0_2.png)
+
+#### 3️⃣ 방금 압축 해제한 `practice_3` 폴더 선택
+
+폴더 선택창에서 **바탕화면 → practice_3** 을 고르고 오른쪽 아래 **Select folder** 를 누릅니다.
+
+![practice_3 폴더 선택 화면](../images/practice3/0_3.png)
+
+!!! warning "주의 — `practice_3` 폴더 자체를 선택"
+    실수로 `data` 폴더나 바탕화면을 선택하지 않도록 주의하세요. 반드시 `AGENTS.md`, `.env.example`, `data` 등이 **안에 보이는** `practice_3` 폴더를 선택해야 합니다.
+
+#### 4️⃣ 프로젝트가 열리면 AI 코딩 에이전트 패널 확인
+
+왼쪽 탐색기에 `data` 폴더와 `AGENTS.md` 가 보이고 오른쪽에 코딩 에이전트 패널이 있으면 준비 완료입니다.
+
+![practice_3 프로젝트 열린 모습](../images/practice3/0_4.png)
+
+!!! info "🚦 자동 허가 모드 설정"
+    에이전트가 매번 "이 파일 수정해도 될까요?" 물으면 실습 흐름이 끊깁니다. 시작 전에 **자동 허가 모드** 로 바꿔두세요.
+
+    👉 [**자동 허가 모드 설정 가이드 열기**](autoapprove.md) (Claude Code / Antigravity / Codex)
 
 !!! tip "사용량 절약을 위한 모델 선택"
     [홈 가이드](../index.md)에 정리된 IDE별 모델 선택 권장사항을 그대로 따르세요. 이번 실습은 백엔드·프론트 코드를 둘 다 만들기 때문에 사용량 소진이 빠를 수 있습니다.
@@ -106,7 +180,7 @@ flowchart LR
 | 페이지 | 무엇을 하나 | 소요 | 프롬프트 수 |
 |:-----:|------------|:---:|:---:|
 | 1 | 캐치 폼 카탈로그 + 결과를 담을 빈 Excel·HTML 양식 만들기 (가짜 데이터로 한 번 채워 확인) | 20분 | 2개 |
-| 2 | 긴 이미지를 알맞게 잘라 AI에 보내고, 여러 사업부문이 섞인 공고를 자동 분리 + 다른 공고로 재검증 | 40분 | 3개 |
+| 2 | 긴 이미지를 알맞게 잘라 AI에 보내고, 여러 직무가 섞인 공고를 자동 분리해 양식에 채우기 | 40분 | 2개 |
 | 3 | 지금까지 만든 걸 웹 화면으로 감싸고 브라우저에서 직접 써보기 | 30분 | 2개 |
 
 총 예상 시간: **90분**
