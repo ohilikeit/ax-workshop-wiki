@@ -16,16 +16,51 @@
 
 ## 👾 Claude Code
 
-VSCode 오른쪽 Claude Code 패널의 **하단 모드 드롭다운**에서 `Edit automatically` 를 선택합니다.
+Claude Code는 자유도에 따라 **두 단계**로 설정할 수 있습니다. 실습 3처럼 백엔드/프론트엔드까지 자동으로 켜고 반복 테스트해야 하는 상황에서는 **자유도 上(Bypass Permissions)** 쪽이 훨씬 덜 번거롭습니다.
 
-![Claude Code 모드 드롭다운 — Edit automatically 선택](../images/practice1/autoapprove_claude.png)
+| 단계 | 동작 | 추천 상황 |
+|------|------|-----------|
+| 자유도 中 — **Edit Automatically** | 파일 편집만 자동 승인 | 코드만 고쳐보는 실습 |
+| 자유도 上 — **Bypass Permissions** | 편집 + 명령어 실행까지 자동 승인 | 서버 실행·설치·테스트까지 자동화 ⭐ 실습 3 권장 |
 
-!!! tip "세 가지 모드의 차이"
+### 자유도 中. Edit Automatically
+
+Claude Code 패널 **하단 모드 드롭다운**에서 `Edit automatically` 를 선택합니다.
+
+![Claude Code 모드 드롭다운 — Edit automatically 선택](../images/practice3/autoapprove_claude_edit.png)
+
+!!! tip "모드별 차이"
     - **Ask before edits** — 수정할 때마다 묻습니다 (기본값)
-    - **Edit automatically** — 자동으로 수정합니다 ⭐ 실습 권장
+    - **Edit automatically** — 파일 편집은 자동, 터미널 명령은 여전히 확인 ⭐ 자유도 中
     - **Plan mode** — 수정 전에 계획을 먼저 보여줍니다
 
-선택하면 입력창 오른쪽 하단에 `</> Edit automatically` 라벨이 표시됩니다. 이제 파일 편집 시 매번 확인 팝업이 뜨지 않습니다.
+선택하면 입력창 오른쪽 하단에 `</> Edit automatically` 라벨이 표시됩니다.
+
+### 자유도 上. Bypass Permissions
+
+파일 편집뿐 아니라 **터미널 명령 실행까지 확인 없이** 진행합니다. 먼저 VSCode 설정에서 이 모드를 **허용**한 뒤, Claude Code 하단에서 모드를 켜야 합니다.
+
+**1단계. VSCode 설정 열기** — 좌측 하단 톱니바퀴(⚙️) → `Settings` (단축키 `Ctrl + ,`)
+
+![VSCode 좌측 하단 설정 메뉴에서 Settings 선택](../images/practice3/autoapprove_claude_settings.png)
+
+**2단계. Extensions → Claude Code** — 왼쪽 트리에서 `Extensions` 를 펼쳐 `Claude Code` 를 클릭합니다.
+
+![Settings → Extensions → Claude Code 항목 선택](../images/practice3/autoapprove_claude_extensions.png)
+
+**3단계. Allow Dangerously Skip Permissions 체크** — 최상단 `Allow Dangerously Skip Permissions` 체크박스를 켭니다.
+
+![Allow Dangerously Skip Permissions 체크박스 활성화](../images/practice3/autoapprove_claude_allow_skip.png)
+
+!!! warning "이 옵션이 무엇을 허용하나요"
+    이 옵션을 활성화하면 **Claude Code가 사용자의 별도 승인 없이 코드 수정과 명령어 실행을 직접 수행**할 수 있게 됩니다. 보안이 중요한 프로젝트나 민감한 정보를 다루는 작업에서는 사용에 주의가 필요하며, **실습이 끝난 후에는 안전을 위해 설정을 비활성화**하는 것을 권장합니다.
+
+**4단계. Claude Code 하단에서 Bypass permissions 선택** — 모드 드롭다운 맨 아래 `Bypass permissions` 항목을 선택합니다.
+
+![Claude Code 모드 드롭다운 — Bypass permissions 선택](../images/practice3/autoapprove_claude_bypass.png)
+
+!!! success "완료"
+    입력창 오른쪽 하단에 `Bypass permissions` 라벨이 뜨면 적용된 것입니다. 이제 백엔드 실행·파일 편집·패키지 설치 같은 명령이 모두 자동으로 진행됩니다.
 
 ---
 
@@ -99,7 +134,7 @@ sandbox_mode = "danger-full-access"
 
 | 도구 | 되돌리는 방법 |
 |------|--------------|
-| Claude Code | 모드 드롭다운에서 `Ask before edits` 로 변경 |
+| Claude Code | 모드 드롭다운에서 `Ask before edits` 로 변경 + (자유도 上을 썼다면) Settings → Extensions → Claude Code → `Allow Dangerously Skip Permissions` 체크 해제 |
 | Antigravity | Agent 탭의 세 항목을 기본값(`On`, `Ask`, `Ask`)으로 복귀 |
 | Codex | 하단 설정에서 `Default permissions` 선택, 또는 `config.toml`의 두 줄 삭제 |
 
