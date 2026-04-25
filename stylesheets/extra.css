@@ -1,0 +1,35 @@
+:root { --md-text-font: "Noto Sans KR", sans-serif; }
+.md-typeset h1 { font-weight: 700; margin-bottom: 0.8em; }
+.md-typeset h2 { border-bottom: 1px solid var(--md-default-fg-color--lightest); padding-bottom: 0.3em; margin-top: 1.8em; }
+/* 페이지 폭 제한 해제 — 화면 가득 사용 */
+.md-grid { max-width: none !important; }
+.md-main__inner { max-width: none !important; margin-top: 1rem; }
+.md-content { max-width: none !important; }
+.md-content__inner { max-width: none !important; }
+
+/* 사이드바 살짝 축소해서 본문에 더 많은 공간 할애 */
+@media screen and (min-width: 76.25em) {
+  .md-sidebar--primary { width: 12.5rem; }
+  .md-sidebar--secondary { width: 12rem; }
+  .md-content__inner { padding: 0 2rem; }
+}
+.md-typeset table:not([class]) { font-size: 0.82rem; border: 1px solid var(--md-default-fg-color--lightest); }
+.md-typeset table:not([class]) th { background-color: var(--md-primary-fg-color); color: var(--md-primary-bg-color); font-weight: 600; }
+.md-typeset .admonition, .md-typeset details { font-size: 0.85rem; }
+.md-typeset pre > code { font-size: 0.8rem; }
+.stage-nav { background: var(--md-code-bg-color); padding: 0.8em 1.2em; border-radius: 6px; margin: 1.5em 0; font-size: 0.9rem; }
+.stage-nav a { font-weight: 600; }
+
+/* 프롬프트 박스(quote/cite admonition) 안의 코드 블록은 자동 줄바꿈 — 가로 스크롤 없이 한눈에 */
+.md-typeset .admonition.quote pre,
+.md-typeset .admonition.quote pre code,
+.md-typeset details.quote pre,
+.md-typeset details.quote pre code,
+.md-typeset .admonition.cite pre,
+.md-typeset .admonition.cite pre code,
+.md-typeset details.cite pre,
+.md-typeset details.cite pre code {
+  white-space: pre-wrap;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}

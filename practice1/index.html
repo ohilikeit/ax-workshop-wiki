@@ -1,0 +1,1785 @@
+
+<!doctype html>
+<html lang="ko" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="비개발자를 위한 AI 코딩 에이전트 실습 교육 위키">
+      
+      
+        <meta name="author" content="AI 팀">
+      
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="stage0/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>개요 - 비개발자 바이브코딩 교육 — 2주차 실습 가이드</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Noto Sans KR";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#1" class="md-skip">
+          콘텐츠로 이동
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="상단/헤더">
+    <a href=".." title="비개발자 바이브코딩 교육 — 2주차 실습 가이드" class="md-header__button md-logo" aria-label="비개발자 바이브코딩 교육 — 2주차 실습 가이드" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            비개발자 바이브코딩 교육 — 2주차 실습 가이드
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              개요
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="다크 모드로 전환"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="다크 모드로 전환" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="라이트 모드로 전환"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="라이트 모드로 전환" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="검색" placeholder="검색" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="검색">
+        
+        <button type="reset" class="md-search__icon md-icon" title="지우기" aria-label="지우기" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            검색 초기화
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="탭" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  홈
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  
+    
+  
+  실습 1 | 모집요강에서 서비스 데이터 추출하기
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../practice2/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  실습 2 | 수학 교재 디지털화 작업
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../practice3/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  실습 3 | 이미지 공고 → 캐치 폼 변환 웹앱
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="네비게이션" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="비개발자 바이브코딩 교육 — 2주차 실습 가이드" class="md-nav__button md-logo" aria-label="비개발자 바이브코딩 교육 — 2주차 실습 가이드" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    비개발자 바이브코딩 교육 — 2주차 실습 가이드
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    홈
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="./" class="md-nav__link md-nav__link--active">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    실습 1 | 모집요강에서 서비스 데이터 추출하기
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link md-nav__link--active" for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    실습 1 | 모집요강에서 서비스 데이터 추출하기
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="stage0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stage 0. 일단 시켜보기
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="stage1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stage 1. 디테일 채워주기
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="stage2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stage 2. 자동화 설계 + 검증
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="stage4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    마무리. Skill 맛보기
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="autoapprove/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    부록. 자동 허가 모드 설정
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="appendix/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    부록. 에러 대처와 프롬프트 팁
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    참고. 세부 메모
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../practice2/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    실습 2 | 수학 교재 디지털화 작업
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    실습 2 | 수학 교재 디지털화 작업
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../practice2/stage0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stage 0. AI에게 상황 설명하기
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../practice2/stage1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stage 1. PDF → 사진 변환 & 문제 페이지 골라내기
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../practice2/stage2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stage 2. 문제를 찾아서 한 장씩 잘라내기
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../practice2/stage2b/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stage 2b. 도형/그래프 추출 (선택)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../practice2/stage3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stage 3. 사람 확인 및 엑셀 정리
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../practice2/stage4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stage 4. Skill화
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../practice2/autoapprove/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    부록. 자동 허가 모드 설정
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../practice2/appendix/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    부록. 피드백 방법과 에러 대처
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../practice3/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    실습 3 | 이미지 공고 → 캐치 폼 변환 웹앱
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    실습 3 | 이미지 공고 → 캐치 폼 변환 웹앱
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../practice3/stage1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. 결과를 담을 빈 양식 만들기
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../practice3/stage2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. 이미지 공고에서 정보 뽑아 양식 채우기
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../practice3/stage3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. 웹 화면 붙이고 직접 써보기
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../practice3/autoapprove/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    부록. 자동 허가 모드 설정
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        업무 배경
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pdf" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        입력 자료: 대학 모집요강 PDF
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#excel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        목표 결과물: 정해진 Excel 양식
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="목표 결과물: 정해진 Excel 양식">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        자동화 대상 데이터 설명
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        실습 전 준비
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        지금 뭘 하는 건가요? (한눈에 보기)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage별 로드맵
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="1">🌧️ 실습 교육 1 | 모집요강에서 서비스 데이터 추출하기<a class="headerlink" href="#1" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p>비개발자가 코딩 에이전트와 대화하며, 대학 모집요강 PDF에서 핵심 정보를 Excel로 자동 추출하는 전 과정을 체험하는 실습 가이드입니다.</p>
+</blockquote>
+<hr />
+<h2 id="_1">업무 배경<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<div class="admonition note">
+<p class="admonition-title">배경</p>
+<p>진학닷컴에서는 매년 <strong>200여 개 대학의 모집요강 PDF</strong>를 읽고, 정해진 Excel 양식에 정보를 채우는 작업을 반복적으로 해왔습니다. 지금까지는 사람이 PDF를 한 페이지씩 넘겨가면서 직접 내용을 채웠습니다.</p>
+</div>
+<p>이 작업의 특징:</p>
+<ul>
+<li>대학마다 모집요강 형식이 전부 다릅니다 (표 구조, 페이지 배치, 용어 등)</li>
+<li>한 대학당 수십~수백 행의 데이터를 채워야 합니다</li>
+<li>셀 병합, 페이지 걸침 표, 다단 헤더 등 복잡한 표 구조가 많습니다</li>
+<li>매년 반복되는 작업이라 자동화의 가치가 큽니다</li>
+</ul>
+<p><strong>이 실습에서는</strong> 이 작업을 AI 코딩 에이전트와 함께 자동화하는 과정을 체험합니다.</p>
+<hr />
+<h2 id="pdf">입력 자료: 대학 모집요강 PDF<a class="headerlink" href="#pdf" title="Permanent link">&para;</a></h2>
+<p>실습에서 다루는 <strong>입력 자료</strong>는 대학이 매년 발행하는 <strong>모집요강 PDF</strong>입니다. 수시·정시 모집단위, 모집인원, 전형료, 제출서류 등의 정보가 수십~수백 페이지에 걸쳐 복잡한 표 형태로 담겨 있습니다.</p>
+<p><img alt="모집요강 PDF 예시 1" src="../images/practice1/index_1.png" /></p>
+<p><img alt="모집요강 PDF 예시 2" src="../images/practice1/index_2.png" /></p>
+<p>PDF의 주요 특징:</p>
+<ul>
+<li>표의 열/행 구조가 대학마다 제각각</li>
+<li>셀 병합, 다단 헤더, 페이지 걸침 표 등 복잡한 레이아웃</li>
+<li>텍스트가 이미지로 삽입되어 단순 복사·붙여넣기가 안 되는 경우도 존재</li>
+</ul>
+<hr />
+<h2 id="excel">목표 결과물: 정해진 Excel 양식<a class="headerlink" href="#excel" title="Permanent link">&para;</a></h2>
+<p>추출한 정보를 <strong>정해진 열 구조의 Excel 파일</strong>에 채우는 것이 최종 목표입니다. 실습 폴더(<code>data/univ_parsed/</code>)에는 열 이름만 있고 내용은 비어있는 양식 파일이 들어 있습니다.</p>
+<p>업무 자동화이기 때문에 <strong>해당 업무를 잘 알고 있는 담당자</strong>임을 가정하고 실습을 진행해야 합니다. 따라서 Excel 양식의 각 열이 어떤 의미를 가지는 지를 설명합니다.</p>
+<div class="admonition tip">
+<p class="admonition-title">실무 팁</p>
+<p>실제 업무를 자동화할 때는 따로 파일에 정의하고 PDF 파일에서 해당하는 부분이 어떻게 나타나는지, 어떤 반례나 예외 사항들이 있는지 예시를 들어서 사진과 함께 정리하면 AI가 훨씬 잘 동작하는 프로세스를 만듭니다.</p>
+</div>
+<h3 id="_2">자동화 대상 데이터 설명<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<div class="admonition info">
+<p class="admonition-title">이 명세는 실습 폴더에도 들어 있습니다</p>
+<p>아래 표와 동일한 내용이 <code>data/columns.md</code> 파일로 실습 zip에 동봉되어 있습니다. Stage 0부터 프롬프트에 <code>@data/columns.md</code> 로 첨부해서 AI가 같은 명세를 그대로 참고하게 합니다.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>열 이름</th>
+<th>설명</th>
+<th style="text-align: center;">PDF 파싱 가능 여부</th>
+<th>예시</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>작업자</td>
+<td>작업 담당자 이름</td>
+<td style="text-align: center;">X</td>
+<td><code>상현</code>, <code>지환</code>, <code>지인</code></td>
+<td>인간 직접 작성 필요</td>
+</tr>
+<tr>
+<td>MajorID</td>
+<td>8자리 숫자 ID</td>
+<td style="text-align: center;">X</td>
+<td><code>15243651</code></td>
+<td>규칙 정하면 자동화 가능</td>
+</tr>
+<tr>
+<td>작업구분(Check)</td>
+<td><code>모집</code></td>
+<td style="text-align: center;">X</td>
+<td><code>모집</code></td>
+<td>사실상 고정값</td>
+</tr>
+<tr>
+<td>모집시기</td>
+<td><code>수시</code></td>
+<td style="text-align: center;">X</td>
+<td><code>수시</code></td>
+<td>사실상 고정값</td>
+</tr>
+<tr>
+<td>PROV</td>
+<td>대학 소재 광역권 묶음</td>
+<td style="text-align: center;">X</td>
+<td><code>서울</code>, <code>인천경기</code></td>
+<td>수동 입력 또는 매핑 필요</td>
+</tr>
+<tr>
+<td>RegionFlag</td>
+<td><code>0/1/2</code> 코드</td>
+<td style="text-align: center;">X</td>
+<td><code>0</code>, <code>1</code>, <code>2</code></td>
+<td>정확한 의미는 파일만으로 확정 어려움</td>
+</tr>
+<tr>
+<td>UnivCode</td>
+<td>대학별 고정 4자리 코드</td>
+<td style="text-align: center;">X</td>
+<td><code>경희대=1022</code>, <code>서울대=1083</code></td>
+<td>키-값 매핑 테이블 필요</td>
+</tr>
+<tr>
+<td>대학명</td>
+<td>대학교 이름</td>
+<td style="text-align: center;">O</td>
+<td><code>경희대</code>, <code>서울대</code></td>
+<td></td>
+</tr>
+<tr>
+<td>PART</td>
+<td>모집단위 대분류 코드</td>
+<td style="text-align: center;">O</td>
+<td><code>1=인문</code>, <code>2=자연</code>, <code>3=예체능</code>, <code>4=자유</code></td>
+<td></td>
+</tr>
+<tr>
+<td>전형유형</td>
+<td>상위 전형 카테고리</td>
+<td style="text-align: center;">O</td>
+<td><code>교과</code>, <code>종합</code>, <code>논술</code>, <code>실기</code></td>
+<td></td>
+</tr>
+<tr>
+<td>전형구분</td>
+<td>대학별 세부 전형 트랙명</td>
+<td style="text-align: center;">O</td>
+<td><code>지역균형</code>, <code>네오르네상스</code></td>
+<td>대학별 명칭 다양</td>
+</tr>
+<tr>
+<td>소계열</td>
+<td>내부 학문분류명</td>
+<td style="text-align: center;">X</td>
+<td><code>국어·국문학</code>, <code>컴퓨터·소프트웨어공학</code></td>
+<td>키-값 매핑 테이블 필요</td>
+</tr>
+<tr>
+<td>소계열코드</td>
+<td>소계열 대응 내부 코드</td>
+<td style="text-align: center;">X</td>
+<td><code>B1101</code>, <code>C1403</code></td>
+<td>코드 패턴 확인됨</td>
+</tr>
+<tr>
+<td>COLL</td>
+<td>단과대/계열명</td>
+<td style="text-align: center;">O</td>
+<td><code>문과대</code>, <code>인문대</code></td>
+<td>자유전공은 빈값 가능</td>
+</tr>
+<tr>
+<td>MajorName</td>
+<td>모집 단위명</td>
+<td style="text-align: center;">O</td>
+<td><code>국어국문</code>, <code>자율전공학부</code></td>
+<td></td>
+</tr>
+<tr>
+<td>25모집인원</td>
+<td>숫자형 모집인원</td>
+<td style="text-align: center;">O</td>
+<td><code>12</code>, <code>28</code>, <code>49</code></td>
+<td>다단계 전형은 같은 값 반복</td>
+</tr>
+<tr>
+<td>성별</td>
+<td><code>0=공통</code>, <code>1=남</code>, <code>2=여</code></td>
+<td style="text-align: center;">O</td>
+<td><code>0</code>, <code>1</code>, <code>2</code></td>
+<td>대부분 <code>0</code></td>
+</tr>
+<tr>
+<td>25모집인원 비고</td>
+<td>모집인원 보충 설명</td>
+<td style="text-align: center;">X</td>
+<td><code>인문대 전체모집인원 6명</code></td>
+<td>대부분 공란</td>
+</tr>
+<tr>
+<td>24경쟁률</td>
+<td>숫자형 경쟁률</td>
+<td style="text-align: center;">X</td>
+<td><code>5.25</code>, <code>7</code>, <code>14.5</code></td>
+<td>키-값 매핑 테이블 필요</td>
+</tr>
+<tr>
+<td>원서접수시작</td>
+<td>원서접수 시작 일시</td>
+<td style="text-align: center;">O</td>
+<td><code>2024-09-09 00:00:00</code></td>
+<td>datetime 형태</td>
+</tr>
+<tr>
+<td>원서접수마감</td>
+<td>원서접수 마감 일시</td>
+<td style="text-align: center;">O</td>
+<td><code>2024-09-11 00:00:00</code></td>
+<td>datetime 형태</td>
+</tr>
+<tr>
+<td>지원자격</td>
+<td>자유서술형 지원자격 문장</td>
+<td style="text-align: center;">O</td>
+<td><code>국내·외 고등학교 졸업(예정)자...</code></td>
+<td></td>
+</tr>
+<tr>
+<td>수능응시영역</td>
+<td>수능 응시 요구 영역</td>
+<td style="text-align: center;">O</td>
+<td><code>국어,수학[확/미/기],영어,사탐/과탐(2),한국사</code></td>
+<td></td>
+</tr>
+<tr>
+<td>최저학력기준</td>
+<td>수능 최저 기준</td>
+<td style="text-align: center;">O</td>
+<td><code>중 3개영역 등급 합 6 이내</code></td>
+<td></td>
+</tr>
+<tr>
+<td>StepCode</td>
+<td>전형 단계 코드</td>
+<td style="text-align: center;">O</td>
+<td><code>0</code>, <code>1</code>, <code>2</code>, <code>10</code>, <code>20</code></td>
+<td></td>
+</tr>
+<tr>
+<td>사정모형</td>
+<td>단계 표현 방식</td>
+<td style="text-align: center;">O</td>
+<td><code>일괄합산</code>, <code>1단계</code>, <code>2단계</code></td>
+<td></td>
+</tr>
+<tr>
+<td>최종단계표시</td>
+<td>최종 단계 여부</td>
+<td style="text-align: center;">O</td>
+<td><code>0</code>, <code>1</code></td>
+<td><code>0=중간</code>, <code>1=최종</code></td>
+</tr>
+<tr>
+<td>사정비율</td>
+<td>단계 배수/스케일 값</td>
+<td style="text-align: center;">O</td>
+<td><code>100</code>, <code>200</code>, <code>300</code></td>
+<td></td>
+</tr>
+<tr>
+<td>학생부</td>
+<td>학생부 반영 비중</td>
+<td style="text-align: center;">O</td>
+<td><code>70</code>, <code>100</code>, <code>30</code></td>
+<td>공란이면 미반영</td>
+</tr>
+<tr>
+<td>면접구술</td>
+<td>면접/구술 반영 비중</td>
+<td style="text-align: center;">O</td>
+<td><code>20</code>, <code>30</code>, <code>50</code></td>
+<td>공란이면 미반영</td>
+</tr>
+<tr>
+<td>논술</td>
+<td>논술 반영 비중</td>
+<td style="text-align: center;">O</td>
+<td><code>70</code>, <code>90</code>, <code>100</code></td>
+<td>공란이면 미반영</td>
+</tr>
+<tr>
+<td>실기</td>
+<td>실기 반영 비중</td>
+<td style="text-align: center;">O</td>
+<td><code>25</code>, <code>80</code>, <code>90</code></td>
+<td>공란이면 미반영</td>
+</tr>
+<tr>
+<td>서류</td>
+<td>서류 반영 비중</td>
+<td style="text-align: center;">O</td>
+<td><code>30</code>, <code>50</code>, <code>70</code></td>
+<td>공란이면 미반영</td>
+</tr>
+<tr>
+<td>기타</td>
+<td>기타 평가요소 반영 비중</td>
+<td style="text-align: center;">O</td>
+<td><code>70</code>(경기실적)</td>
+<td><code>비고</code>와 같이 봐야 함</td>
+</tr>
+<tr>
+<td>전형총점</td>
+<td>해당 단계 총점 기준값</td>
+<td style="text-align: center;">O</td>
+<td><code>100</code>, <code>500</code>, <code>1000</code></td>
+<td>학교/전형별 스케일 다름</td>
+</tr>
+<tr>
+<td>비고</td>
+<td>평가요소 보충 설명</td>
+<td style="text-align: center;">O</td>
+<td><code>기타는 경기실적</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><img alt="Excel 양식 예시 1" src="../images/practice1/index_3.png" /></p>
+<p><img alt="Excel 양식 예시 2" src="../images/practice1/index_4.png" /></p>
+<p>이 두 파일 사이의 간극 — <strong>PDF에서 Excel로</strong> — 을 AI가 자동으로 메꾸는 것이 이번 실습의 핵심입니다.</p>
+<hr />
+<h2 id="_3">실습 전 준비<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<div class="admonition info">
+<p class="admonition-title">준비물</p>
+<ul>
+<li>Claude Code 설치 및 기본 사용법 숙지</li>
+<li>Python 설치 완료</li>
+<li>실습 폴더 구조 확인</li>
+</ul>
+</div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>practice_1/
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>├── data/
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>│   ├── univ/           ← 실습용 PDF (대학 모집요강)
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>│   ├── univ_parsed/    ← 추출 결과 저장하는 빈 Excel (열 이름만 있음)
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>│   └── columns.md      ← 컬럼 명세서 (AI에게 첨부해서 사용)
+</code></pre></div>
+<hr />
+<h2 id="_4">지금 뭘 하는 건가요? (한눈에 보기)<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<div class="admonition abstract">
+<p class="admonition-title">실습의 큰 그림</p>
+<p><strong>"대학 모집요강 PDF를 읽고 Excel 양식을 채우는 반복 업무"</strong> 를 <strong>AI와 함께 자동화</strong>하고, 그 자동화 과정을 <strong>한 번 더 쓸 수 있는 Skill로 포장</strong>하는 것이 이 실습의 전부입니다.</p>
+</div>
+<pre class="mermaid"><code>flowchart LR
+    subgraph INPUT["📥 매년 반복되는 수작업"]
+        P1["모집요강 PDF&lt;br/&gt;(200여 개 대학)"]
+        E1["빈 Excel 양식&lt;br/&gt;(36개 열)"]
+    end
+
+    subgraph WORK["🤖 이번 실습: AI와 함께 자동화"]
+        direction TB
+        S0["Stage 0&lt;br/&gt;일단 시켜보기&lt;br/&gt;&lt;i&gt;AI가 뭘 헷갈리는지 본다&lt;/i&gt;"]
+        S1["Stage 1&lt;br/&gt;디테일 채워주기&lt;br/&gt;&lt;i&gt;업무 규칙·용어·예외 알려준다&lt;/i&gt;"]
+        S2["Stage 2&lt;br/&gt;자동화 설계 + 검증&lt;br/&gt;&lt;i&gt;스크립트를 만들고 정답과 비교한다&lt;/i&gt;"]
+        S0 --&gt; S1 --&gt; S2
+    end
+
+    subgraph OUT["📦 최종 산출물 (마무리)"]
+        SK["&lt;b&gt;Skill&lt;/b&gt;&lt;br/&gt;/recruit-parser&lt;br/&gt;&lt;br/&gt;→ 다른 대학 PDF에도&lt;br/&gt;한 마디로 재사용"]
+        EX["채워진 Excel"]
+    end
+
+    INPUT --&gt; WORK --&gt; OUT</code></pre>
+<h2 id="stage">Stage별 로드맵<a class="headerlink" href="#stage" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Stage</th>
+<th>무엇을 하나</th>
+<th style="text-align: center;">소요</th>
+<th style="text-align: center;">프롬프트 수</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">0</td>
+<td>AI에게 바로 시켜보며 어디서 헷갈리는지 봅니다</td>
+<td style="text-align: center;">5분</td>
+<td style="text-align: center;">1개</td>
+</tr>
+<tr>
+<td style="text-align: center;">1</td>
+<td>도메인 지식·용어·예외 규칙을 붙여줍니다</td>
+<td style="text-align: center;">12분</td>
+<td style="text-align: center;">1~2개</td>
+</tr>
+<tr>
+<td style="text-align: center;">2</td>
+<td>파싱 흐름을 설계·구현하고 정답과 자동 비교합니다</td>
+<td style="text-align: center;">25분</td>
+<td style="text-align: center;">2개</td>
+</tr>
+<tr>
+<td style="text-align: center;">마무리</td>
+<td><strong>지금까지의 흐름을 재사용 가능한 Skill로 만듭니다</strong></td>
+<td style="text-align: center;">15분</td>
+<td style="text-align: center;">—</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">왜 마무리 단계(Skill화)가 중요한가요?</p>
+<p>Stage 0~2는 <strong>이번 한 번</strong> PDF를 Excel로 만드는 과정입니다. 마무리 단계에서 이 흐름을 Skill로 포장하면, 다음에는 <code>/recruit-parser 연세대 PDF</code> 같은 한 마디로 똑같은 작업을 끝낼 수 있습니다. 자동화의 진짜 가치는 <strong>반복 실행</strong>에서 나옵니다.</p>
+</div>
+<hr />
+<p><strong>다음 →</strong> <a href="stage0/">Stage 0. 일단 시켜보기</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  맨위로
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="하단/푸터" >
+        
+          
+          <a href=".." class="md-footer__link md-footer__link--prev" aria-label="이전: 홈">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                이전
+              </span>
+              <div class="md-ellipsis">
+                홈
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="stage0/" class="md-footer__link md-footer__link--next" aria-label="다음: Stage 0. 일단 시켜보기">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                다음
+              </span>
+              <div class="md-ellipsis">
+                Stage 0. 일단 시켜보기
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "navigation.indexes", "navigation.footer", "toc.follow", "search.suggest", "search.highlight", "content.tabs.link", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\ud074\ub9bd\ubcf4\ub4dc\uc5d0 \ubcf5\uc0ac\ub428", "clipboard.copy": "\ud074\ub9bd\ubcf4\ub4dc\ub85c \ubcf5\uc0ac", "search.result.more.one": "\uc774 \ubb38\uc11c\uc5d0\uc11c 1\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.more.other": "\uc774 \ubb38\uc11c\uc5d0\uc11c #\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.none": "\uac80\uc0c9\uc5b4\uc640 \uc77c\uce58\ud558\ub294 \ubb38\uc11c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4", "search.result.one": "1\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.other": "#\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.placeholder": "\uac80\uc0c9\uc5b4\ub97c \uc785\ub825\ud558\uc138\uc694", "search.result.term.missing": "\ud3ec\ud568\ub418\uc9c0 \uc54a\uc740 \uac80\uc0c9\uc5b4", "select.version": "\ubc84\uc804 \uc120\ud0dd"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
