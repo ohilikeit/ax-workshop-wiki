@@ -3,3 +3,7 @@ __pycache__/
 .DS_Store
 .omc/
 .venv/
+.env
+node_modules/
+.agent/
+.claude/
